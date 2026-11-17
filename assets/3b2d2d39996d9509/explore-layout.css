@@ -1,0 +1,127 @@
+/* The map and its list share the screen; long trip pages keep document scrolling. */
+.shell { max-width: none; }
+body:has(#explore-panel.active) { overflow: hidden; }
+.shell:has(#explore-panel.active) {
+  height: 100dvh;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: 64px minmax(0, 1fr);
+  overflow: hidden;
+}
+.shell:has(#explore-panel.active) > .masthead {
+  grid-area: 1 / 1;
+  height: 64px;
+  padding: 0 20px;
+  gap: 24px;
+}
+.shell:has(#explore-panel.active) > .tabs {
+  grid-area: 1 / 2;
+  position: static;
+  justify-content: flex-end;
+  padding: 8px 20px 8px 0;
+  gap: 6px;
+}
+.shell:has(#explore-panel.active) > .tabs button { flex: 0 1 130px; }
+.shell:has(#explore-panel.active) > main {
+  grid-area: 2 / 1 / 3 / -1;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.panel#explore-panel.active { display: flex; height: 100%; }
+.explore-controls { display: flex; align-items: center; gap: 12px; padding: 12px 20px 8px; }
+.explore-toolbar { flex: 1; min-width: 0; padding: 0; }
+.explore-toolbar input { height: 46px; }
+.quick-fields { flex: none; padding: 0; align-items: center; gap: 10px; }
+.quick-fields label { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: 14px; }
+.quick-fields select { width: 200px; }
+#quick-camp-cost { width: 140px; }
+.quick-fields .text-button { font-size: 14px; }
+.quick-categories { flex: none; flex-wrap: nowrap; overflow-x: auto; padding: 0 20px 10px; scrollbar-width: thin; }
+.filter-status { flex: none; padding: 0 20px 6px; font-size: 13px; }
+.atlas {
+  flex: 1;
+  min-height: 0;
+  grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
+  padding: 0 12px 12px;
+  gap: 16px;
+  overflow: hidden;
+}
+.map-column {
+  position: relative;
+  top: auto;
+  align-self: stretch;
+  height: 100%;
+  min-height: 0;
+  border-radius: 10px;
+}
+.map-wrap { flex: 1; height: 100%; min-height: 0; }
+#map-peek { display: none; }
+.map-column > .map-legend {
+  position: absolute;
+  bottom: 22px;
+  left: 12px;
+  right: 12px;
+  z-index: 500;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #101514ed;
+  scrollbar-width: thin;
+}
+.map-column .legend-type { flex: none; }
+.place-list, .list-view .place-list {
+  overflow: auto;
+  overscroll-behavior: contain;
+  height: 100%;
+  padding: 0 8px 20px;
+}
+.list-header { position: sticky; top: 0; z-index: 2; padding: 8px 0 12px; background: var(--bg); }
+.list-header h1 { font-size: 22px; }
+.list-view .atlas { display: block; }
+.map-view .photo-open.card-open { min-height: 0; aspect-ratio: 2.1; }
+.map-view .card-info { padding: 12px; }
+.map-view .card-title { font-size: 21px; }
+html[data-inline] .shell:has(#explore-panel.active) { height: 820px; }
+@media (max-width: 1200px) {
+  .shell:has(#explore-panel.active) .base-context { display: none; }
+  .quick-fields select { width: 165px; }
+  .quick-fields label { font-size: 0; gap: 0; }
+  .quick-fields label select { font-size: 15px; }
+  .atlas { grid-template-columns: 320px minmax(0, 1fr); gap: 12px; }
+}
+@media (max-width: 760px) {
+  .shell:has(#explore-panel.active) { display: flex; }
+  .shell:has(#explore-panel.active) > .masthead { height: 54px; padding: 0 12px; }
+  .shell:has(#explore-panel.active) > main { flex: 1; min-height: 0; }
+  .shell:has(#explore-panel.active) > .tabs {
+    order: 3;
+    flex: none;
+    padding: 4px 6px max(4px, env(safe-area-inset-bottom));
+    border-top: 1px solid var(--line);
+    border-bottom: 0;
+    gap: 2px;
+  }
+  .shell:has(#explore-panel.active) > .tabs button { flex: 1; min-height: 56px; font-size: 13px; }
+  .explore-controls { flex-wrap: wrap; gap: 6px; padding: 6px 12px; }
+  .explore-toolbar { flex-basis: 100%; }
+  .search-box input { height: 44px; }
+  .quick-fields { width: 100%; gap: 8px; }
+  .quick-fields label { flex: 1; min-width: 0; }
+  .quick-fields select, #quick-camp-cost { width: 100%; min-height: 44px; padding: 7px; }
+  .quick-fields .text-button { flex: none; min-height: 44px; padding: 7px; }
+  .quick-categories { padding: 0 12px 6px; }
+  .quick-categories .chip { min-height: 44px; padding: 6px 13px; }
+  .atlas { padding: 0; display: block; }
+  .map-column { border: 0; border-radius: 0; }
+  .map-wrap { flex: 1; height: 100%; }
+  .place-list, .list-view .place-list { padding: 0 12px 20px; }
+  .map-tools { top: 10px; right: 10px; gap: 6px; }
+  .map-tools button { font-size: 13px; min-height: 44px; }
+  .leaflet-bar a { width: 44px !important; height: 44px !important; line-height: 44px !important; }
+  .map-column > .map-legend { bottom: 20px; left: 8px; right: 8px; padding: 6px 8px; }
+  html[data-inline] .shell:has(#explore-panel.active) { height: 720px; }
+}

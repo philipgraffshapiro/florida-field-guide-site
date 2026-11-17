@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "path": "assets/3b2d2d39996d9509/vendor/leaflet.css",
+      "bytes": 14145,
+      "sha256": "337bfca5cabd03b39815b2700febe2b3b7edf55921c59cd49f88ecb328212303"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/vendor/markercluster.css",
+      "bytes": 872,
+      "sha256": "614dea0a98ff3f4ead74f04918f6b1d1b9ba435c25b5fc23b21a394d1e3e4d87"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/styles.css",
+      "bytes": 45061,
+      "sha256": "68074b8dffcbd3ceabb08ac8ff0895d93b2b054a3f793a95334fb9ece8cd4d67"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/explore-layout.css",
+      "bytes": 4726,
+      "sha256": "1ee0f0923c33d9edad97376979cebaebfe68e840024e894f3211a2998a40cb18"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/map-interaction.css",
+      "bytes": 5494,
+      "sha256": "7ea5e3325aac90724158e8a9fce1fa7127e9629f9efec992b7db21924573a7a0"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/mobile-design.css",
+      "bytes": 4493,
+      "sha256": "86e0c32415aab5ecf4629c7158a91c5db0b4e175901394d61c4aa26a7c1de0e0"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/mobile-sheet.css",
+      "bytes": 5156,
+      "sha256": "8ca6a2389d38b596451479a6205657c3ad096050b48d50275ba425c67790331f"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/core.js",
+      "bytes": 9460,
+      "sha256": "a326489c5c0d861eb8e5f0fdee60c50ea8234cf5657cb698007dea2340aabaa4"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/ratings.js",
+      "bytes": 3871,
+      "sha256": "24f2efdf132a2a1c53e2b59285fdbadb2d290ea67597c505d010c4aca0d4dbe2"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/shared-highlights.js",
+      "bytes": 104,
+      "sha256": "2831e21a200c9ea3ef489af7f188169fb613499a12272f0656e85f98c6dee069"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/stay-logic.js",
+      "bytes": 1872,
+      "sha256": "dde2551d7114dd489fd039bf9906032a27a0baef8c4448947eb395541d817495"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/stays-form.js",
+      "bytes": 4416,
+      "sha256": "7ec0b3a1ab06dcc6d3c032099f981e6e763ea21ae95132f02b5ac10cfaa4674a"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/stays-ui.js",
+      "bytes": 6808,
+      "sha256": "a7530af3e268b9d6ae8dee81c6e016cd55ca2cd7a7814f088ed7cde19287412d"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/vendor/leaflet.js",
+      "bytes": 147552,
+      "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/vendor/markercluster.js",
+      "bytes": 34136,
+      "sha256": "1e4e1d22972a3926f48598e0caf14e3fe7049835d428a344fed4f9e3665b3508"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-state.js",
+      "bytes": 4411,
+      "sha256": "cce8755222556a53aad1321d9ae97c0ee7328032259eb966e9c49a780d26a121"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-map-symbols.js",
+      "bytes": 3059,
+      "sha256": "26d7933e095ae75be4d9521b8d40cdaf7eacb7de4c23c492a45347265cc1d6bd"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-map-density.js",
+      "bytes": 2260,
+      "sha256": "5b7f551dccc701098db6141095ba03815bcf62c593f2525fb4ca2deaa2578a74"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-map-clusters.js",
+      "bytes": 3070,
+      "sha256": "a63ca6f11a15a9a7f8dca5b335c0558d6dcf78d075eac091cac7119055a8a607"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-map-filters.js",
+      "bytes": 3323,
+      "sha256": "bbbaa86089be1fcb397d95ee838a8434f1a25a4f9cd10dbffc0bca567dabac29"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-stay-map.js",
+      "bytes": 4990,
+      "sha256": "58267076864dea5a99b618e2df8b60bd26c57c54951f0e764c418a5ac7fed3e9"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-camp.js",
+      "bytes": 2672,
+      "sha256": "a28ff0c36bf84ace98ca84b343fd46753d1b3f276778ac64b0b3a248282e6c44"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-cards.js",
+      "bytes": 8032,
+      "sha256": "fd0bd65aacdd3ff890cfb9afc5d0717a6cff86a4942df744dd5be1bedd01a8ff"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-explore.js",
+      "bytes": 3710,
+      "sha256": "cadb0857deb017be479c6741a4ef05b75c30603040f72cf7a3e08340923e3fbe"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-detail.js",
+      "bytes": 6882,
+      "sha256": "62d346d112cb08cbf860de47e1af748b12ac71876d5b17af6ebdd5e5cae2bb83"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-map.js",
+      "bytes": 3031,
+      "sha256": "cb39781c782acd419d1e8cd7c6c1418ae95af79bac3de67ae7829f8e3d28be49"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-trip.js",
+      "bytes": 7851,
+      "sha256": "3e108d4a79ffa2ac2e8e8fdcf35afd390ffe1d4ede3cbf8d1f9c6a6207bd53a0"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-planner.js",
+      "bytes": 2416,
+      "sha256": "4f450932315766ef60d2795b5ba94e52524d59860cf13bfc1af4a16c9b139ff8"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-views.js",
+      "bytes": 5934,
+      "sha256": "3952386b6be550ebd934191250fda71fd9cd6fd0f8c252ce0e05255c2890a3bd"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-mobile.js",
+      "bytes": 4263,
+      "sha256": "5e9be1a9d568e8a8ceed6e29244fcd3e7a965f0192998e3ddb29b1d984252033"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-reviews.js",
+      "bytes": 2656,
+      "sha256": "eff885c7fb6b1c1f7b8242a018075037333bbfeef5462a22029229636ca3ac9f"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app-events.js",
+      "bytes": 6448,
+      "sha256": "5d28fc0cc2d72f4ed0560674df70c3dbd7b939e39904d0dfab8224bdadcef858"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/app.js",
+      "bytes": 1208,
+      "sha256": "1354f6e97cf2846e74112f0d2c27351e99d1bbe862256da97ee9cf064df37251"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/site-theme.js",
+      "bytes": 247,
+      "sha256": "08b55c506e8b75d05acb2c0544efd87e5a39b1730ba76561a8f958ff49cb1b62"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/site-start.js",
+      "bytes": 1781,
+      "sha256": "1fd08af09880d45111a3b89838402b584251e57ac214f346d14376c7752daf65"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/vendor/leaflet-LICENSE.txt",
+      "bytes": 1369,
+      "sha256": "bbc959aaef7488b38942e7f05cfd1244351f8bce54261951ea17dd7cf60f894b"
+    },
+    {
+      "path": "assets/3b2d2d39996d9509/vendor/markercluster-LICENSE.txt",
+      "bytes": 1052,
+      "sha256": "3133dacd38250bd1f524d8166cc60a016a382522e062fce143691c65bf5e4b3d"
+    },
+    {
+      "path": "data/catalog.3b1f8aeb8273ff98.json",
+      "bytes": 3041747,
+      "sha256": "3b1f8aeb8273ff98863048783a692cfa9405208f1d3016c8fea935bdff1fe4d0"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11929,
+      "sha256": "aa70e91ad08b26e2836d43467e53551abe6026905e18934d1ff1b70503af7fe7"
+    }
+  ]
+}
