@@ -2,15 +2,67 @@
 <html lang="en" data-edition="share">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="color-scheme" content="dark light"><script src="assets/7508ee3e3e9c69f7/site-theme.js"></script><meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark light"><script src="assets/f0e42eb195f410ba/site-theme.js"></script><meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Florida Field Guide</title>
-<link rel="stylesheet" href="assets/7508ee3e3e9c69f7/vendor/leaflet.css">
-<link rel="stylesheet" href="assets/7508ee3e3e9c69f7/vendor/markercluster.css">
-<link rel="stylesheet" href="assets/7508ee3e3e9c69f7/styles.css">
-<link rel="stylesheet" href="assets/7508ee3e3e9c69f7/explore-layout.css">
-<link rel="stylesheet" href="assets/7508ee3e3e9c69f7/map-interaction.css">
-<link rel="stylesheet" href="assets/7508ee3e3e9c69f7/mobile-design.css">
-<link rel="stylesheet" href="assets/7508ee3e3e9c69f7/mobile-sheet.css">
+<link rel="stylesheet" href="assets/f0e42eb195f410ba/vendor/leaflet.css">
+<link rel="stylesheet" href="assets/f0e42eb195f410ba/vendor/markercluster.css">
+<link rel="stylesheet" href="assets/f0e42eb195f410ba/styles.css">
+<link rel="stylesheet" href="assets/f0e42eb195f410ba/explore-layout.css">
+<link rel="stylesheet" href="assets/f0e42eb195f410ba/map-interaction.css">
+<link rel="stylesheet" href="assets/f0e42eb195f410ba/mobile-design.css">
+<link rel="stylesheet" href="assets/f0e42eb195f410ba/mobile-sheet.css">
+<link rel="preload" as="fetch" href="data/catalog.60a8c94163ce78ba.json" crossorigin>
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/core.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/ratings.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/shared-highlights.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/01-CRS.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/02-EPSG3857.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/03-eventsKey.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/04-lf_Map_options.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/05-lf_Map_stop.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/06-lf_Map__moveStart.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/07-Layers.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/08-Scale.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/09-android23.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/10-Icon.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/11-Path.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/12-GeoJSON.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/13-DivOverlay.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/14-Tooltip.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/15-lf_GridLayer_options.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/16-lf_GridLayer__update.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/17-Renderer.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/18-webkit3d.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/19-mobile.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/leaflet/20-pointer.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/markercluster.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/markercluster/01-mc_MarkerClusterGroup_zoomToShowLayer.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/markercluster/02-MarkerCluster.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/markercluster/03-exports.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/vendor/markercluster/04-exports.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-fit.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-state.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-map-symbols.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-map-density.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-map-clusters.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-map-filters.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-stay-map.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-camp.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-federal.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-cards.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-explore.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-detail.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-map.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-location.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-map-layers.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-planner.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-views.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-mobile.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-reviews.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app-events.js">
+<link rel="preload" as="script" href="assets/f0e42eb195f410ba/app.js">
+<script src="assets/f0e42eb195f410ba/site-start.js" defer data-catalog="data/catalog.60a8c94163ce78ba.json" data-map-scripts="core.js ratings.js shared-highlights.js vendor/leaflet.js vendor/leaflet/01-CRS.js vendor/leaflet/02-EPSG3857.js vendor/leaflet/03-eventsKey.js vendor/leaflet/04-lf_Map_options.js vendor/leaflet/05-lf_Map_stop.js vendor/leaflet/06-lf_Map__moveStart.js vendor/leaflet/07-Layers.js vendor/leaflet/08-Scale.js vendor/leaflet/09-android23.js vendor/leaflet/10-Icon.js vendor/leaflet/11-Path.js vendor/leaflet/12-GeoJSON.js vendor/leaflet/13-DivOverlay.js vendor/leaflet/14-Tooltip.js vendor/leaflet/15-lf_GridLayer_options.js vendor/leaflet/16-lf_GridLayer__update.js vendor/leaflet/17-Renderer.js vendor/leaflet/18-webkit3d.js vendor/leaflet/19-mobile.js vendor/leaflet/20-pointer.js vendor/markercluster.js vendor/markercluster/01-mc_MarkerClusterGroup_zoomToShowLayer.js vendor/markercluster/02-MarkerCluster.js vendor/markercluster/03-exports.js vendor/markercluster/04-exports.js" data-scripts="app-fit.js app-state.js app-map-symbols.js app-map-density.js app-map-clusters.js app-map-filters.js app-stay-map.js app-camp.js app-federal.js app-cards.js app-explore.js app-detail.js app-map.js app-location.js app-map-layers.js app-planner.js app-views.js app-mobile.js app-reviews.js app-events.js app.js" data-panels="data/catalog.f57e5f6f3f715126.json" data-panel-scripts="stay-logic.js stays-form.js stays-ui.js app-trip.js" data-details="data/catalog.436c3f72d5e7b5a4.json data/catalog.9af8073a3901ee66.json data/catalog.76cb3a237895f00e.json data/catalog.2118c3cfdc3119e3.json data/catalog.a11499c1cc0d4b75.json data/catalog.c0863a90b230b12e.json data/catalog.5781e73cdc879443.json data/catalog.13f49ab66a1ac410.json data/catalog.ab55bf99cbd5c813.json data/catalog.e9331a417bb00a2e.json data/catalog.b3784c0b5088359a.json data/catalog.feceaf8d6d5cc13e.json data/catalog.13dd8321aa2bce99.json data/catalog.21cd48fe44fd3e41.json data/catalog.be5e2d0574f2a16b.json data/catalog.cb80f77c8c7924ac.json data/catalog.6a63d1ce4dcceed6.json data/catalog.4613f9caea7991e4.json data/catalog.46c2b8e37e6d9b95.json data/catalog.e3faaad08207fe9c.json data/catalog.da67fd988dff083a.json data/catalog.f216e40ae524e403.json data/catalog.8bbef7bcb099910d.json data/catalog.df4a9a2ad3a358e5.json data/catalog.193a3662bac84a88.json data/catalog.1b00aea6317eaa25.json data/catalog.b9d85946a93c1d16.json data/catalog.8fdf098c2e20cddb.json data/catalog.999b12455946105a.json data/catalog.bc723b888dec00a3.json data/catalog.33860af4e12fe3a1.json data/catalog.9f4b27d2efbb00b1.json data/catalog.ce1f03c59c990389.json data/catalog.5d0b4ea991ca5095.json data/catalog.b0ee509809058feb.json data/catalog.40647fd74533bb35.json data/catalog.75bc69e768165b17.json data/catalog.b880cdd1c2afe27a.json data/catalog.3ba9deb500a73583.json data/catalog.6da2670733995d40.json data/catalog.9ade79c2d3593c60.json data/catalog.8b8728350c44a76e.json data/catalog.a4a008193203d830.json data/catalog.b12a48e5f85a2aca.json data/catalog.4abb4e52c9c4f6ea.json data/catalog.d5798cd44bfdc4df.json data/catalog.b6590e873320fd96.json data/catalog.541ac99a8eae0cad.json data/catalog.134b7f934e5b67b3.json data/catalog.7ce318c964beab18.json data/catalog.37249bd2a530e2a8.json data/catalog.2ecd79e85255000e.json data/catalog.a879214aa204598e.json data/catalog.36e5d9c5aafd938e.json data/catalog.ea527d03eb31866d.json data/catalog.48002e3f5f81cc81.json data/catalog.47823488c37b4080.json data/catalog.f36a2fbe075922ea.json data/catalog.c6dd932c8bc1bea9.json data/catalog.72d5c5dcbcfdd6b1.json data/catalog.b2ba3fea02a360ec.json data/catalog.27dc50bdebcfcd9e.json data/catalog.630bb1a78f5086ff.json data/catalog.7aeaf86b0db658cd.json"></script>
 </head>
 <body>
 <div id="site-status" role="status"><p id="site-loading-message">Loading map…</p><a id="site-retry" href="./" hidden>Reload guide</a></div><div class="shell" inert>
@@ -28,7 +80,8 @@
 <section id="trip-panel" class="panel scroll-panel" aria-label="Your trip"><div id="trip-content"></div></section>
 <section id="saved-panel" class="panel scroll-panel" aria-label="Saved places"><div class="section-top"><h1>Your saved places</h1><p>Hearts keep places here. Visits are tracked separately.</p></div><div class="saved-switch" role="group" aria-label="Plans or visited places"><button data-saved-view="plans" aria-pressed="true">♡ Want to go</button><button data-saved-view="done" aria-pressed="false">✓ Visited</button></div><div class="board-filters"><label>Place type<select id="saved-category"><option value="all">Everything</option><option value="spring">Springs</option><option value="camp">Camping</option><option value="work">Work spots</option><option value="stay">Rooms & rentals</option><option value="beach">Beaches</option><option value="wildlife">Wildlife</option></select></label><label>Area<select id="saved-region"><option value="all">All areas</option></select></label></div><button id="route-picks" hidden class="outline">Open saved route</button><div id="saved-content"></div></section>
 <section id="stays-panel" class="panel scroll-panel" aria-label="Places to stay"><div id="stays-content"></div></section>
-<section id="practical-panel" class="panel scroll-panel" aria-label="Practical notes and settings"><button id="close-notes" class="modal-close">× Close notes</button><div id="practical-content"></div><details class="disclosure"><summary>Backups & guide information</summary><div class="disclosure-body"><p id="save-status" role="status">Choices save in this browser.</p><div class="action-row"><button id="export" class="outline">Export my picks</button><button id="import" class="outline">Import picks</button></div><input id="import-file" type="file" accept="application/json,.json" hidden><button id="export-catalog" class="text-button">Download full catalog ↗</button><div id="method-content"></div></div></details></section>
+<section id="practical-panel" class="panel scroll-panel" aria-label="Practical notes and settings"><button id="close-notes" class="modal-close">× Close notes</button>
+<p id="edition-information"></p><div id="practical-content"></div><details class="disclosure"><summary>Backups & guide information</summary><div class="disclosure-body"><p id="save-status" role="status">Choices save in this browser.</p><div class="action-row"><button id="export" class="outline">Export my picks</button><button id="import" class="outline">Import picks</button></div><input id="import-file" type="file" accept="application/json,.json" hidden><button id="export-catalog" class="text-button">Download full catalog ↗</button><div id="method-content"></div></div></details></section>
 </main>
 <nav class="tabs" aria-label="Guide sections">
 <button class="active" data-tab="explore" data-view="map" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2zM9 3v16M15 5v16"/></svg><span>Map</span></button>
@@ -39,15 +92,18 @@
 </nav></div>
 <dialog id="filters-dialog" aria-labelledby="filters-title">
 <header class="sheet-top"><h2 id="filters-title">Show on the map</h2><button id="close-filters" class="modal-close" aria-label="Close filters"><span aria-hidden="true">×</span> Close</button></header>
-<div class="sheet-content"><p class="filter-intro">Turn each type on or off. Mix as many as you like.</p><div class="map-type-actions"><span id="map-types-summary"></span><button class="text-button" data-map-types="all">Show all</button><button class="text-button" data-map-types="none">Hide all</button></div><div id="categories" class="category-row" role="group" aria-label="Map types"></div><p class="filter-help">Each place appears once, under its main type. The symbols match the map. Stays has its own map and filters.</p>
-<h3 class="filter-subheading">Narrow your results</h3><label class="activity-field">Activity<select id="activity"><option value="all">Any activity</option></select></label>
+<div class="sheet-content"><button id="rental-map-toggle" class="map-type-toggle outline" type="button" aria-pressed="false">Rooms &amp; rentals only<span class="toggle-state" aria-hidden="true"></span></button><h3 id="map-types-heading" class="filter-intro">Primary map types</h3><p class="filter-help">Each place has one primary type, shown by its map symbol. Turn on any combination.</p><div class="map-type-actions"><span id="map-types-summary"></span><button class="text-button" data-map-types="all">Show all</button><button class="text-button" data-map-types="none">Hide all</button></div><div id="categories" class="category-row" role="group" aria-labelledby="map-types-heading"></div>
+<h3 class="filter-subheading">Narrow your results</h3><label class="activity-field">Activity across types<select id="activity" aria-describedby="activity-help"><option value="all">Any activity</option></select></label><p id="activity-help" class="filter-help">Find an activity within the types you turned on. For example, Boardwalks can include springs and wildlife areas that have a boardwalk.</p>
 <div class="outing-filters"><label class="check-label"><input id="family-friendly" type="checkbox"> Family friendly</label><label class="check-label"><input id="free-entry" type="checkbox"> Free entrance</label><p class="filter-help">Documented family outings and entrance fees. Parking or activities can cost extra.</p></div>
 <div class="filter-fields">
 <label>Camping style<select id="camp-style"><option value="all">Any campsite</option><option value="primitive">Primitive / dispersed</option><option value="no-power">No electric hookups</option><option value="no-facilities">No power, water or toilets</option><option value="developed">Developed campground</option></select></label><label id="camp-cost-row" hidden>Camping cost<select id="camp-cost"><option value="all">Free and paid</option><option value="free">Free only</option><option value="paid">Paid only</option></select></label>
 <label>Facilities<select id="amenity"><option value="">Any facilities</option><option value="restrooms">Restrooms</option><option value="picnic">Picnic areas</option><option value="playground">Playground</option><option value="boardwalk">Boardwalk</option><option value="easy-walk">Easy walk</option><option value="visitor-center">Visitor center</option><option value="rentals">Equipment rentals</option><option value="guided">Guided activities</option></select></label>
 <label>Region<select id="region"><option value="all">All Florida</option></select></label>
 <label>Sort by<select id="sort"><option value="fit">Featured places</option><option value="distance">Closest</option><option value="name">A to Z</option></select></label>
-<label>Starting from<select id="base"><option value="ocala">Ocala</option><option value="citra">Citra</option><option value="tampa">Tampa</option><option value="orlando">Orlando</option><option value="staugustine">St. Augustine</option><option value="miami">Miami</option></select></label>
+<label>Starting from<select id="base"><option value="auto">Choose in Maps</option><option value="ocala">Ocala</option><option value="citra">Citra</option><option value="tampa">Tampa</option><option value="orlando">Orlando</option><option value="staugustine">St. Augustine</option><option value="miami">Miami</option></select></label>
+<label>Weather for this outing<select id="outing-conditions"><option value="any">Any weather</option><option value="sun">Sunny, clear-water outing</option><option value="gray">Overcast, wildlife outing</option></select></label>
+<label>Time for this outing<select id="outing-window"><option value="any">Any outing length</option><option value="short">Up to 2 hours</option><option value="half">Up to 4 hours</option></select></label>
+<label>Outing date<input type="date" id="outing-date"></label><label>Planned arrival (local)<input type="time" id="outing-arrival"></label>
 <label>Distance<select id="radius"><option value="0">Anywhere</option><option value="35">35 miles</option><option value="75">75 miles</option><option value="150">150 miles</option><option value="250">250 miles</option></select><small>Straight-line miles, not driving distance.</small></label></div>
 <label class="check-label"><input id="hide-closed" type="checkbox"> Hide reported closures</label><label class="check-label"><input id="hide-visited" type="checkbox"> Hide known revisits</label></div><footer class="filter-footer"><button id="reset-filters" class="outline">Reset</button><button id="apply-filters" class="primary">View map</button></footer></dialog>
 <dialog id="place-dialog" aria-label="Place details"><header class="sheet-top"><button id="detail-next" class="text-button">Next place →</button><button id="close-detail" class="modal-close" aria-label="Close place details"><span aria-hidden="true">×</span> Close</button></header><div id="detail" class="sheet-content"></div></dialog>
@@ -56,5 +112,5 @@
 
 
 
-<script src="assets/7508ee3e3e9c69f7/site-start.js" data-catalog="data/catalog.3b1f8aeb8273ff98.json" data-scripts="core.js ratings.js shared-highlights.js stay-logic.js stays-form.js stays-ui.js vendor/leaflet.js vendor/leaflet/01-CRS.js vendor/leaflet/02-EPSG3857.js vendor/leaflet/03-eventsKey.js vendor/leaflet/04-lf_Map_options.js vendor/leaflet/05-lf_Map_stop.js vendor/leaflet/06-lf_Map__moveStart.js vendor/leaflet/07-Layers.js vendor/leaflet/08-Scale.js vendor/leaflet/09-android23.js vendor/leaflet/10-Icon.js vendor/leaflet/11-Path.js vendor/leaflet/12-GeoJSON.js vendor/leaflet/13-DivOverlay.js vendor/leaflet/14-Tooltip.js vendor/leaflet/15-lf_GridLayer_options.js vendor/leaflet/16-lf_GridLayer__update.js vendor/leaflet/17-Renderer.js vendor/leaflet/18-webkit3d.js vendor/leaflet/19-mobile.js vendor/leaflet/20-pointer.js vendor/markercluster.js vendor/markercluster/01-mc_MarkerClusterGroup_zoomToShowLayer.js vendor/markercluster/02-MarkerCluster.js vendor/markercluster/03-exports.js vendor/markercluster/04-exports.js app-state.js app-map-symbols.js app-map-density.js app-map-clusters.js app-map-filters.js app-stay-map.js app-camp.js app-cards.js app-explore.js app-detail.js app-map.js app-location.js app-map-layers.js app-trip.js app-planner.js app-views.js app-mobile.js app-reviews.js app-events.js app.js" defer></script>
+
 </body></html>

@@ -1,0 +1,75 @@
+/* Neutral app tokens; map markers and the filter key carry the place-type colors. */
+:root { --bg:#101010; --panel:#191919; --raised:#252525; --line:#3c3c3c; --ink:#f7f7f7; --muted:#b9b9b9; --gold:#f1f1f1; --aqua:#ddd; --sage:#ddd; --rose:#ddd; color-scheme:dark; }
+:root[data-theme="light"] { --bg:#fff; --panel:#f7f7f7; --raised:#ececec; --line:#d1d1d1; --ink:#161616; --muted:#626262; --gold:#181818; --aqua:#222; --sage:#333; --rose:#444; color-scheme:light; }
+body,.shell,.masthead,.tabs,.sheet-top,.filter-footer { background:var(--bg); color:var(--ink); }
+.brand strong span { color:var(--ink); }
+.primary,.chip.active,.pick-row button.active { background:var(--ink); color:var(--bg); border-color:var(--ink); }
+.outline,.map-tools button,select,input,textarea,.modal-close { background:var(--bg); color:var(--ink); border-color:var(--line); border-radius:7px; }
+.tabs button.active { background:var(--raised); color:var(--ink); }
+.tabs button,.text-button,.card-desc,.disclosure-body,.card-warning,.decision-note,.stay-caveat,.private-note,.done-row { color:var(--ink); }
+.decision-note { background:var(--raised); border-color:var(--line); }
+.card-open:hover,.map-type-toggle.active { background:var(--raised); border-color:var(--ink); }
+.rating-stars,.rating-button,.saved,.photo-save { color:var(--ink); }
+.photo-save,.photo-category { background:var(--bg); color:var(--ink); border-color:var(--line); }
+.map-type-toggle .toggle-state { background:var(--bg); color:var(--ink); border-color:var(--muted); }
+.map-type-toggle[aria-pressed="true"] .toggle-state { background:var(--ink); color:var(--bg); border-color:var(--ink); }
+/* Map markers: each place type keeps its own color and icon (PIN_TYPES in app-map-symbols.js). */
+.type-pin { width:28px; height:28px; background:var(--pin); color:#10201a; border:2px solid #fff; border-radius:50%; box-shadow:0 1px 4px #000b; }
+.type-pin svg { display:block; width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2; }
+.type-pin.selected { transform:scale(1.3); outline:3px solid #fff; outline-offset:1px; box-shadow:0 0 0 5px #000a; }
+.type-cluster { position:relative; display:flex; align-items:center; justify-content:center; gap:2px; width:44px; height:28px; padding:0 2px; background:var(--pin); color:#10201a; border:2px solid #fff; border-radius:14px; box-shadow:0 1px 4px #000b; }
+.category-count { display:flex; align-items:center; justify-content:space-between; gap:5px; min-height:18px; }
+.type-cluster b { color:#10201a; font:800 12px/1 Arial,sans-serif; font-variant-numeric:tabular-nums; }
+.type-cluster svg { display:block; flex:none; width:13px; height:13px; fill:none; stroke:currentColor; stroke-width:2.2; }
+/* A crowded spot keeps its own color and gets a "+" badge; a tap zooms to the places under it. */
+.nearby-map-dot::after { content:'+'; position:absolute; top:0; right:0; width:14px; height:14px; border-radius:50%; background:#fff; color:#111; font:800 13px/14px Arial,sans-serif; text-align:center; box-shadow:0 0 0 1px #0008; }
+.cluster-more { position:absolute; bottom:-7px; right:-5px; padding:0 3px; line-height:12px; background:var(--ink); color:var(--bg); border-radius:5px; }
+.leaflet-bar a { background:var(--bg)!important; color:var(--ink)!important; }
+/* Color map: dark mode turns the street map dark but keeps water blue and parks green. */
+.shared-map-dark .leaflet-tile-pane { filter:invert(1) hue-rotate(180deg) brightness(.95) contrast(.88) saturate(1.15); }
+html[data-theme="light"] .leaflet-tile-pane { filter:none; }
+#map.satellite-map .leaflet-tile-pane { filter:none; }
+.map-tools .map-layer-button { display:flex; align-items:center; gap:6px; min-height:44px; font-weight:600; }
+.map-layer-button svg { width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:2; stroke-linejoin:round; }
+.map-layer-button[aria-pressed="true"] { color:#2f7cf6; }
+.filter-glyph { display:inline-grid; place-items:center; flex:none; width:30px; height:30px; border-radius:50%; background:var(--pin); color:#10201a; }
+.filter-glyph svg { width:17px; height:17px; fill:none; stroke:currentColor; stroke-width:2; }
+.photo-category::before { content:''; display:inline-block; width:9px; height:9px; margin-right:6px; border-radius:50%; background:var(--pin,var(--ink)); vertical-align:1px; }
+/* Find my location: arrow button bottom-left, blue dot with an accuracy ring. */
+.leaflet-control.locate-button { display:grid; place-items:center; width:44px; height:44px; padding:0; background:var(--bg); color:var(--ink); border:1px solid var(--line); border-radius:50%; box-shadow:0 1px 5px #0008; cursor:pointer; }
+.locate-button svg { width:21px; height:21px; fill:none; stroke:currentColor; stroke-width:2; stroke-linejoin:round; }
+.locate-button.active { color:#2f7cf6; }
+.locate-button.active svg { fill:#2f7cf6; }
+.locate-button.locating svg { animation:locate-pulse .8s ease-in-out infinite alternate; }
+@keyframes locate-pulse { to { opacity:.3; } }
+.location-dot span { display:block; width:18px; height:18px; margin:3px; border-radius:50%; background:#2f7cf6; border:3px solid #fff; box-shadow:0 0 0 1px #0006,0 1px 6px #0009; }
+/* List header: title, then count with the sort menu, then the way back to all of Florida. */
+.list-header { flex-wrap:wrap; align-items:center; row-gap:8px; }
+.list-header h1 { flex:1 1 100%; }
+.list-header p { text-align:left; }
+.list-sort { display:flex; align-items:center; gap:6px; margin-left:auto; font-size:13px; color:var(--muted); }
+#list-all-florida { flex-basis:100%; min-height:44px; padding:0; text-align:left; }
+.list-sort select { min-height:44px; padding:4px 8px; font-size:16px; }
+@media(prefers-reduced-motion:reduce) { .locate-button.locating svg { animation:none; opacity:.5; } }
+.leaflet-control-attribution { background:var(--bg)!important; color:var(--muted)!important; }
+.leaflet-control-attribution a { color:var(--muted)!important; }
+.map-result-bar { background:var(--bg); border:1px solid var(--line); }
+.group-category h3 { display:flex; align-items:center; gap:9px; margin:18px 0 5px; }
+.group-category h3 span { margin-left:auto; color:var(--muted); }
+.group-place { display:block; text-align:left; padding:10px 0; width:100%; border-bottom:1px solid var(--line); font-size:16px; }
+.group-zoom { margin:12px 20px 0; }
+.my-review { display:grid; gap:14px; }
+.my-review label { display:grid; gap:8px; }
+.review-stars { display:flex; gap:6px; }
+.review-stars button { width:44px; padding:0; font-size:32px; color:var(--muted); opacity:.5; }
+.review-stars button.filled { color:var(--ink); opacity:1; }
+.review-dates { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.own-review-summary { padding:12px 0; }
+.own-review-summary small { display:block; color:var(--muted); }
+.own-review-summary p { white-space:pre-wrap; margin-top:8px; }
+.saved-category-heading { margin:24px 0 12px; font-size:21px; }
+#map-context { min-height:260px; margin:16px 0; }
+#close-notes { float:right; position:sticky; top:12px; z-index:3; }
+[hidden] { display:none!important; }
+#site-status { position:fixed; z-index:2000; left:50%; top:40%; transform:translate(-50%,-50%); padding:20px; width:min(320px,90vw); background:var(--panel); border:1px solid var(--line); border-radius:10px; }
+#site-retry { display:block; margin-top:12px; color:var(--ink); }

@@ -1,0 +1,6 @@
+assets/** -text
+data/** -text
+destination-media/** -text
+index.html -text
+site-assets.json -text
+s/**/index.html -text
